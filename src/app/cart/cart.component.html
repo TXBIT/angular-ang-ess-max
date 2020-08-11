@@ -10,5 +10,14 @@
 <hr />
 
 <ul class="list-group">
-  <li class="list-group-item" *ngFor="let item of items">{{ item }}</li>
+  <li
+    class="list-group-item"
+    *ngFor="let item of items; let i = index"
+    [ngStyle]="{
+      backgroundColor: i % 2 === 0 ? 'yellow' : 'blue',
+      color: i % 2 === 0 ? 'black' : 'white'
+    }"
+  >
+    {{ item }}
+  </li>
 </ul>
