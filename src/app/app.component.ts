@@ -20,10 +20,10 @@ export class AppComponent {
   onItemWasAdded(newItem: any) {
     // this.rootItems.push(newItem);
     // this.rootItems = this.rootItems.concat([newItem]);
-    // this.rootItems = [...this.rootItems, newItem];
-    // console.log(this.rootItems);
+    this.rootItems = [...this.rootItems, newItem];
+    console.log(this.rootItems);
 
     // console.log(_.random(1, 10));
-    console.log(random(1, 10));
+    // console.log(random(1, 10));
   }
 }
