@@ -6,6 +6,7 @@ import { AppComponent } from "./app.component";
 import { UserComponent } from "./user.component";
 import { UserDetailComponent } from "./user-detail/user-detail.component";
 import { DashboardComponent } from "./dashboard.component";
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { DashboardComponent } from "./dashboard.component";
     UserComponent,
     DashboardComponent,
     UserDetailComponent,
+    CartComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
