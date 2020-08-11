@@ -3,15 +3,15 @@ import { Component } from "@angular/core";
 @Component({
   selector: "app-user",
   template: `
-    <input type="text" (input)="onUserInput($event)" />
-    <p>Hello {{ name }}!</p>
+    <input type="text" [(ngModel)]="name" />
+    <p>Hello {{ name }}</p>
     <p>I'm the user paragraph</p>
   `,
 })
 export class UserComponent {
   name: string = "Name Here";
 
-  onUserInput(event) {
+  onUserInput(event: any) {
     this.name = event.target.value;
   }
 }
